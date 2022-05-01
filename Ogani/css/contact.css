@@ -1,0 +1,92 @@
+.hero .holder aside ul {
+	padding: 20px;
+	border: var(--main-border);
+	position: absolute;
+	width: 100%;
+}
+/* Start How-To */
+.how-to {
+	padding-top: calc(var(--main-padding) * 1.5);
+	padding-bottom: calc(var(--main-padding) * 1.5);
+}
+.how-to .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 40px 20px;
+}
+.how-to .box {
+	text-align: center;
+}
+.how-to .box i {
+	font-size: var(--l-text-size);
+	color: var(--main-color);
+	margin-bottom: 20px;
+}
+.how-to .box h3 {
+	font-size: var(--m-text-size);
+	font-weight: 900;
+	margin-bottom: 15px;
+}
+.how-to .box p {
+	font-size: var(--s-text-size);
+	color: var(--dark-color);
+}
+/* End How-To */
+/* Start Map */
+.map iframe {
+    width: 100%;
+}
+/* End Map */
+/* Start Message */
+.message {
+    padding-top: var(--main-padding);
+    padding-bottom: calc(2 * var(--main-padding));
+    text-align: center;
+}
+.message h2 {
+    font-size: 32px;
+    color: var(--dark-color);
+    font-weight: 900;
+}
+.message .container {
+    margin-top: 40px;
+    padding: 0 50px;
+}
+.message .holder {
+    display: flex;
+    flex-wrap: wrap;
+}
+.message::placeholder {
+    color: var(--gray-color);
+}
+.message .holder .input-field .item {
+    padding: 0 15px;
+}
+.message .holder .input-field:nth-child(1), 
+.message .holder .input-field:nth-child(2) {
+    flex: 50%;
+}
+.message .holder .input-field:nth-child(3) {
+    flex: 100%;
+}
+.message .holder .input-field:nth-child(1) input, 
+.message .holder .input-field:nth-child(2) input,
+.message .holder .input-field textarea {
+    width: 100%;
+    border: var(--main-border);
+    padding: 15px 20px;
+    outline: none;
+    resize: none;
+    margin-bottom: 20px;
+    caret-color: var(--main-color);
+}
+.message .holder .input-field:nth-child(3) textarea {
+    min-height: 150px;
+}
+.message .container input[type=submit] {
+    margin: 0 auto;
+    font-size: var(--s-text-size);
+    font-weight: 900;
+    padding: 15px 18px;
+}
+/* End Message */
